@@ -66,7 +66,7 @@ export default function App() {
         <div className="bg-white rounded-2xl shadow p-6 md:p-8 border border-gray-200">
           <Page />
         </div>
-        <p className="text-center text-white/60 text-xs mt-8">Theme color: #2e411a</p>
+        <p className="text-center text-white/60 text-xs mt-8">Created and Maintained by Jar. DM on Discord with bugs or suggestions.</p>
       </div>
     </div>
   );
@@ -97,3 +97,4 @@ How to use in your GitHub repo
      base: "/<your-repo-name>/",
    });
 */
+
