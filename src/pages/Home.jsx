@@ -25,10 +25,10 @@ export default function Home() {
   return (
     <div>
       {/* small page intro, no crest/title here */}
-      <div className="mb-6">
+     <center> <div className="mb-6">
         <h2 className="text-2xl font-semibold">Choose a generator</h2>
         <p className="text-sm text-gray-600">Create forum-ready BBCode reports.</p>
-      </div>
+      </div></center>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {generators.map(g => (
