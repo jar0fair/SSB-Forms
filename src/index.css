@@ -3,35 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===========================
-   Your visual tweaks (no JSX change required)
-   =========================== */
+/* ===== Your tweaks ===== */
 
-/* Make the small action buttons filled white (remove outlines) */
+/* OUTLINED small action buttons (reverts from filled white) */
 button.rounded-xl.border.px-3.py-1.text-sm {
-  background: #ffffff;
-  border: none;
-  color: #111827;             /* gray-900 */
+  background: transparent;
+  border: 1px solid #e5e7eb;   /* gray-200 outline */
+  color: #111827;              /* gray-900 text */
 }
 button.rounded-xl.border.px-3.py-1.text-sm:hover {
-  background: #f3f4f6;        /* gray-100 */
+  background: #f9fafb;         /* gray-50 hover */
 }
 button.rounded-xl.border.px-3.py-1.text-sm:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* Remove shadows & borders from the form sections (your Section wrapper) */
+/* Keep form sections clean (no drop shadows / borders) */
 .bg-white.rounded-2xl.shadow.p-4.border.border-gray-200 {
-  box-shadow: none;            /* no drop shadow */
-  border: none;                /* no outline/border */
+  box-shadow: none;
+  border: none;
 }
 
-/* Inputs keep a subtle border but drop the heavy focus ring */
+/* Inputs: subtle focus (no heavy ring) */
 input.mt-1.w-full.rounded-xl.border.border-gray-300.px-3.py-2:focus,
 select.mt-1.w-full.rounded-xl.border.border-gray-300.px-3.py-2:focus,
 textarea.mt-1.w-full.rounded-xl.border.border-gray-300.px-3.py-2:focus {
   outline: none;
   box-shadow: none;
-  border-color: #d1d5db;       /* keep border-gray-300 */
+  border-color: #d1d5db;       /* gray-300 */
 }
+
+/* Optional small global resets */
+html, body, #root { height: 100%; margin: 0; }
+* { box-sizing: border-box; }
