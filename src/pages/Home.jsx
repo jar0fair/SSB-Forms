@@ -16,10 +16,10 @@ function Card({ title, subtitle, hash }) {
 
 export default function Home() {
   const generators = [
-    { title: "Friction Ridge Report", subtitle: "Build BBCode for latent print/ACE-V reports.", hash: "#/friction" },
-    { title: "Forensic Ballistics Report", subtitle: "IBIS matches and unmatched item auto-list.", hash: "#/ballistics" },
+    { title: "Friction Ridge Report", subtitle: "Fingerprints and latent prints.", hash: "#/friction" },
+    { title: "Forensic Ballistics Report", subtitle: "Weapons and IBIS matches.", hash: "#/ballistics" },
     { title: "DNA Analysis Report", subtitle: "CODIS-based matched/unmatched/deceased profiles.", hash: "#/dna" },
-    { title: "Narcotics Analysis Report", subtitle: "Evidence with weights, DEPA guide, optional lab signature.", hash: "#/narcotics" },
+    { title: "Narcotics Analysis Report", subtitle: "Evidence with weights, DEPA guide and lab signature.", hash: "#/narcotics" },
   ];
 
   return (
