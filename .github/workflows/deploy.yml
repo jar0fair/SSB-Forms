@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]     # change if your default branch is different
-  workflow_dispatch: {}    # enables the "Run workflow" button
+    branches: [ main ]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-      - run: npm ci
+          # no cache: lockfile not present
+      - run: npm install            # <-- use install, not ci
       - run: npm run build
       - run: touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
