@@ -3,3 +3,18 @@
 @tailwind utilities;
 
 /* your tiny overrides go here (see section C) */
+/* --- Your visual tweaks --- */
+
+/* make our small action buttons “filled” white rather than outlined */
+.small-btn,
+button.small-btn {
+  @apply bg-white text-gray-900 rounded-xl px-3 py-1 hover:bg-gray-100 active:scale-95 border-0;
+}
+
+/* remove shadows and borders from form sections */
+.form-section {
+  @apply bg-white p-4 rounded-2xl shadow-none border-0;
+}
+
+
+
